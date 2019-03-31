@@ -26,7 +26,7 @@ if ( model.getAnimationCount() > 0) {
 			animationTime = 0.0;
 			contador = 0;
 		}
-		model.setTime(animationTime); // model.setNormalizedTime(animationTime);
+		model.setTime(animationTime); //change from  model.setNormalizedTime(animationTime);
 	}
 
 	model.setPosition(ofGetWidth() * 4 / 6, (float)ofGetHeight() * 0.75, 0);
@@ -80,13 +80,13 @@ void ofApp::draw(){
 
 	switch(actualRenderMode){
 		case RENDER_MODE_FILL:
-			model.draw(OF_MESH_FILL); //same as model.drawFaces();
+			model.draw(OF_MESH_FILL); //change from  model.drawFaces(); for pi
 			break;
 		case RENDER_MODE_POINTS:
-			model.draw(OF_MESH_POINTS); // same as model.drawVertices();
+			model.draw(OF_MESH_POINTS); // change from as model.drawVertices(); for pi
 			break;
 		case RENDER_MODE_WIREFRAME:
-			model.draw(OF_MESH_WIREFRAME); // same as model.drawWireframe();
+			model.draw(OF_MESH_WIREFRAME); // change from as model.drawWireframe(); for pi
 			break;
 	}
 
